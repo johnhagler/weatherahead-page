@@ -148,6 +148,7 @@ function displayRoute(origin, destination, waypoints) {
 	}, function(response, status) {
     	if (status === google.maps.DirectionsStatus.OK) {
 			directionsDisplay.setDirections(response);
+		console.log(response)
 		} else {
 			alert('Could not display directions due to: ' + status);
 		}
