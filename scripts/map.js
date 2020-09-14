@@ -160,6 +160,8 @@ function directionsChanged() {
 	var route = new Route();
 	route.directions = directionsDisplay.getDirections().routes[0];
 	
+	console.log(route);
+	
 	clearWeatherMarkers();
 	clearRainbowRoad();
     
